@@ -26,19 +26,19 @@ def draw_ear(x, y):
 def draw_face():
     draw_circle("orange", 100, 0, 0)  # Голова
 
-    draw_circle("white", 15, -35, 30)  # Левый глаз
-    draw_circle("white", 15, 35, 30)  # Правый глаз
+    draw_circle("white", 15, -35, 30)  
+    draw_circle("white", 15, 35, 30)  
 
-    draw_circle("black", 6, -35, 35)  # Левый зрачок
-    draw_circle("black", 6, 35, 35)  # Правый зрачок
+    draw_circle("black", 6, -35, 35)  
+    draw_circle("black", 6, 35, 35) 
 
     draw_circle("pink", 10, 0, 10)  # Нос
 
     t.penup()
     t.goto(0, 10)
     t.pendown()
-    t.setheading(-60)  # Угол наклона для рта
-    t.circle(20, 120)  # Рот (выпуклость)
+    t.setheading(-60)  
+    t.circle(20, 120)  
 
     # Усы
     t.penup()
@@ -56,12 +56,12 @@ def main():
     t.speed(3)
     draw_face()
 
-    # Рисуем уши
+    # уши
     draw_ear(-60, 80)  # Левое ухо
     draw_ear(60, 80)  # Правое ухо
 
-    t.hideturtle()  # Скрыть черепашку
-    t.done()  # Завершить
+    t.hideturtle()  
+    t.done()  
 
 
 if __name__ == "__main__":
